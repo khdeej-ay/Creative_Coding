@@ -1,0 +1,59 @@
+/* STYLESHEET FOR INTERACTIVE ART ACTIVITY */
+
+/* default styles */
+html, body {
+  /* resets margin and padding to zero for the entire document */
+  margin: 0;
+  padding: 0;
+  /* hides the default cursor */
+  cursor: none;
+  /* sets the default font family to Archivo */
+  font-family: "Archivo", sans-serif;
+  /* hides any overflowing content */
+  overflow: hidden;
+}
+
+/* styles for the canvas */
+canvas {
+  /* displays the canvas as a block-level element */
+  display: block;
+}
+
+/* targets the div for display text */
+#display-text {
+  /* hides the cursor when hovering over the display text */
+  cursor: none;
+  /* removes outline and border from the display text */
+  outline: none;
+  border: none;
+  color: #fcfcfc;
+  /* centers the text horizontally */
+  text-align: center;
+  /* positions the text absolutely */
+  position: absolute;
+  /* sets the font size relative to the viewport width */
+  font-size: calc(6vmax);
+  /* positions the text to the center of the viewport */
+  top: 50%;
+  left: 50%;
+  /* translates the text back by 50% of its own width and height, this centers it perfectly */
+  transform: translate(-50%, -50%);
+  /* sets the maximum width of the text to 100% of the viewport width */
+  max-width: 100%;
+  /* displays the text as a block-level element */
+  display: block;
+}
+
+/* targets the cursor styles */
+#scroll-cursor {
+  background-color: #fcfcfc;
+  /* sets the height and width of the cursor */
+  height: 20px;
+  width: 20px;
+  /* rounds the corners of the cursor */
+  border-radius: 6px;
+  /* positions the cursor absolutely */
+  position: absolute;
+  /* ensures that the cursor appears above other elements */
+  z-index: 2;
+}
